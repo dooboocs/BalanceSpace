@@ -15,6 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  width: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -30,6 +34,7 @@ button {
   background: none;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .gradient {
@@ -46,4 +51,20 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .section-inner {
+    width: 100%;
+  }
 }

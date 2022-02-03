@@ -1,0 +1,140 @@
+.section8 {
+  background: #f5f5f7;
+}
+
+.section8 .section-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 58px 0;
+}
+
+.section8 .section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.section8 .section-header-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+  color: #949ca8;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.section8 .section-header-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #454f5d;
+}
+
+.section8 .section-content {
+  position: relative;
+}
+
+.section8 .card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.section8 .card {
+  height: 250px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section8 .card p:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: 700;
+  color: #454f5d;
+}
+
+.section8 .card div p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #454f5d;
+}
+
+.section8 .card div p:nth-of-type(2) strong {
+  font-size: 28px;
+}
+
+.section8 .card div p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b0b7c7;
+  text-decoration: line-through;
+  margin-top: 6px;
+}
+
+.section8 .ghost {
+  display: inline-block;
+  font-size: 14px;
+  color: #c0c6d3;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .section8 .section-inner {
+    padding: 58px 25px;
+  }
+
+  .section8 .section-header-top {
+    font-size: 18px;
+  }
+
+  .section8 .section-header-top svg {
+    width: 20px;
+  }
+
+  .section8 .section-header-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .section8 .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section8 .card {
+    width: 100%;
+    height: 170px;
+  }
+
+  .section8 .card p {
+    font-size: 20px;
+  }
+
+  .section8 .card div p {
+    font-size: 16px;
+  }
+
+  .section8 .card div strong {
+    font-size: 22px;
+  }
+
+  .section8 .card div p:nth-of-type(2) {
+    font-size: 15px;
+  }
+
+  .section8 .ghost {
+    bottom: -30px;
+    top: auto;
+  }
+}
