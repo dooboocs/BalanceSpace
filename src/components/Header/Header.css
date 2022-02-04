@@ -47,16 +47,45 @@
   font-size: 16px;
   font-weight: 400;
   padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.header .nav button {
+.header .nav li:hover {
+  background: #f3f5f9;
+}
+
+.header .collapsible input {
+  display: none;
+}
+
+.header .collapsible .collapsible-content {
+  display: flex;
+  width: 100%;
+  opacity: 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .collapsible input:checked ~ .collapsible-content {
+  opacity: 1;
+}
+
+.header .nav a.filled {
   padding: 0 20px;
   height: 40px;
+  line-height: 40px;
   background: #29292e;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
   border-radius: 7px;
+  transition: all ease-in 0.2s;
+}
+
+.header .nav a.filled:hover {
+  opacity: 0.7;
 }
 
 .header .menu-toggle {
@@ -132,7 +161,7 @@
   color: #787b83;
 }
 
-.overlay {
+.header .overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -144,7 +173,7 @@
   z-index: 0;
 }
 
-.overlay.visible {
+.header .overlay.visible {
   display: block;
 }
 

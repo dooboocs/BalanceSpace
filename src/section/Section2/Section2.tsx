@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Section2.css";
 import { Masonry } from "@mui/lab";
+import { ScrollReveal } from "../../components/ScrollReveal";
 
 const Section2 = () => {
   return (
@@ -15,63 +16,75 @@ const Section2 = () => {
         </h1>
         <div className="masonry">
           <Masonry columns={2} spacing={2}>
-            <div className="card">
-              <div className="card-header">
-                <img src={require("../../static/profile-circle.png")} />
-                <div>
-                  <strong>이진호</strong>님의 리뷰
+            <ScrollReveal>
+              <div className="card">
+                <div className="card-header">
+                  <img src={require("../../static/profile-circle.png")} />
+                  <div>
+                    <strong>이진호</strong>님의 리뷰
+                  </div>
                 </div>
+                <div className="card-content">
+                  <strong>저렴한 수수료</strong>로 비용을 많이 아낄 수 있어서
+                  좋았어요.
+                </div>
+                <span className="bottom-icon">💰</span>
               </div>
-              <div className="card-content">
-                <strong>저렴한 수수료</strong>로 비용을 많이 아낄 수 있어서
-                좋았어요.
-              </div>
-              <span className="bottom-icon">💰</span>
-            </div>
+            </ScrollReveal>
 
             <div className="card blank" />
 
-            <div className="card dark">
-              <h3>고객 추천지수</h3>
-              <span className="bottom-gradient gradient">92.5%</span>
-            </div>
+            <ScrollReveal>
+              <div className="card dark">
+                <h3>고객 추천지수</h3>
+                <span className="bottom-gradient gradient">92.5%</span>
+              </div>
+            </ScrollReveal>
 
-            <div className="card">
-              <div className="card-header">
-                <img src={require("../../static/profile-circle.png")} />
-                <div>
-                  <strong>김휘로</strong>님의 리뷰
+            <ScrollReveal>
+              <div className="card">
+                <div className="card-header">
+                  <img src={require("../../static/profile-circle.png")} />
+                  <div>
+                    <strong>김휘로</strong>님의 리뷰
+                  </div>
                 </div>
-              </div>
-              <div className="card-content">
-                신청과 계약 과정이 <strong>빠르고 편리해요.</strong>
-              </div>
-              <span className="bottom-icon">⚡</span>
-            </div>
-
-            <div className="card dark">
-              <h3>고객 만족도</h3>
-              <span className="bottom-gradient gradient">93%</span>
-            </div>
-
-            <div className="card">
-              <div className="card-header">
-                <img src={require("../../static/profile-circle.png")} />
-                <div>
-                  <strong>이정진</strong>님의 리뷰
+                <div className="card-content">
+                  신청과 계약 과정이 <strong>빠르고 편리해요.</strong>
                 </div>
+                <span className="bottom-icon">⚡</span>
               </div>
-              <div className="card-content">
-                우편물 관리, 재계약 등의{" "}
-                <strong>사후관리가 잘 되어 좋았어요.</strong>
-              </div>
-              <span className="bottom-icon">👍</span>
-            </div>
+            </ScrollReveal>
 
-            <div className="card dark">
-              <h3>재계약 의사</h3>
-              <span className="bottom-gradient gradient">94%</span>
-            </div>
+            <ScrollReveal>
+              <div className="card dark">
+                <h3>고객 만족도</h3>
+                <span className="bottom-gradient gradient">93%</span>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal>
+              <div className="card">
+                <div className="card-header">
+                  <img src={require("../../static/profile-circle.png")} />
+                  <div>
+                    <strong>이정진</strong>님의 리뷰
+                  </div>
+                </div>
+                <div className="card-content">
+                  우편물 관리, 재계약 등의{" "}
+                  <strong>사후관리가 잘 되어 좋았어요.</strong>
+                </div>
+                <span className="bottom-icon">👍</span>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal>
+              <div className="card dark">
+                <h3>재계약 의사</h3>
+                <span className="bottom-gradient gradient">94%</span>
+              </div>
+            </ScrollReveal>
           </Masonry>
         </div>
       </div>

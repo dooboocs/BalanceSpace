@@ -1,0 +1,164 @@
+.consult-1 {
+  width: 100%;
+  height: 100vh;
+  background: #ececf7;
+  min-width: 414px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.consult-1 .close {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.consult-1 .title {
+  font-size: 32px;
+  color: #454f5d;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+
+.consult-1 ul {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.consult-1 li {
+  width: 100%;
+  padding: 25px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.consult-1 li p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #454f5d;
+  letter-spacing: -0.88px;
+  gap: 8px;
+}
+
+.consult-1 li p label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #8a8e9b;
+  letter-spacing: -0.88px;
+}
+
+.consult-1 li span {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 14px;
+  background: #5d75ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 50px;
+  letter-spacing: -0.84px;
+}
+
+.consult-1 li button {
+  position: absolute;
+  right: -120px;
+  color: #5b7cff;
+  font-size: 15px;
+  letter-spacing: -0.84px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.consult-1 .popup {
+  display: none;
+  position: fixed;
+  width: 426px;
+  padding: 40px 25px;
+  border-radius: 24px;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.consult-1 .popup.visible {
+  display: flex;
+}
+
+.consult-1 .popup .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.consult-1 .popup-content {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.consult-1 .popup .popup-text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.consult-1 .popup .popup-subtext {
+  color: #454f5d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.consult-1 .popup .popup-subtext small {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.consult-1 .popup .popup-subtext div p strong {
+  font-size: 30px;
+}
+
+/* Popup 1 */
+.consult-1 #popup-1 {
+  background: #eff2ff;
+}
+
+.consult-1 #popup-1 .popup-text {
+  color: #7f8bba;
+}
+
+.consult-1 #popup-1 .popup-text strong {
+  color: #5b7cff;
+}
+
+.consult-1 #popup-1 .popup-subtext small {
+  color: #5b7cff;
+}
+
+.consult-1 .overlay.show {
+  position: fixed;
+  /* width: 100%;
+  height: 100vh; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(64, 65, 69, 0.38);
+  backdrop-filter: blur(5px);
+}

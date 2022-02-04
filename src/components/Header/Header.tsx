@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
   const [collapse, setCollapse] = useState(true);
+  const [dropdown, setDropdown] = useState(true);
 
   const toggleCollapse = () => {
     setCollapse(!collapse);
@@ -12,23 +14,31 @@ const Header = () => {
     <>
       <header className={`header ${collapse ? "collapse" : "expand"}`}>
         <div className="gnb">
-          <img
-            className="logo"
-            src={require("../../static/logo.png")}
-            alt="Balance Space"
-          />
+          <Link to="/">
+            <img
+              className="logo"
+              src={require("../../static/logo.png")}
+              alt="Balance Space"
+            />
+          </Link>
           <nav className="nav">
             <ul>
-              <li>
-                비상주 사무실
-                <img
-                  src={require("../../static/bottom_chevron.png")}
-                  style={{ marginLeft: 10 }}
-                />
+              <li className="dropdown">
+                <Link to="/">
+                  비상주 사무실
+                  <img
+                    src={require("../../static/bottom_chevron.png")}
+                    style={{ marginLeft: 10 }}
+                  />
+                </Link>
               </li>
-              <li>위치 안내</li>
+              <li>
+                <Link to="/location">위치 안내</Link>
+              </li>
             </ul>
-            <button>빠른 상담하기</button>
+            <Link to="/consult" className="filled">
+              빠른 상담하기
+            </Link>
           </nav>
           <button onClick={toggleCollapse} className="menu-toggle">
             <div className="toggle-icon">
