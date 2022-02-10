@@ -1,10 +1,11 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import "./Section10.css";
+import { Link } from "react-router-dom";
+import "./Section10.scss";
 
 const Section10 = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1200px)",
+    query: "(max-width: 475px)",
   });
 
   return (
@@ -22,8 +23,12 @@ const Section10 = () => {
           )}
         </h2>
         <div className="button-group">
-          <button className="button filled">빠른 상담하기</button>
-          <button className="button">요금안내 보기</button>
+          <Link to="/consult">
+            <button className="button filled">빠른 상담하기</button>
+          </Link>
+          <a href="#section8">
+            <button className="button hover">요금안내 보기</button>
+          </a>
         </div>
       </div>
     </section>

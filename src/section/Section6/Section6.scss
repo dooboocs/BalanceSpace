@@ -1,0 +1,22 @@
+#section6 {
+  background: #000;
+  color: #fff;
+}
+
+#section6 .section-inner {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 95px 0;
+
+  @media (max-width: 475px) {
+    padding: 60px 20px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+#section6 .section-inner .gradient-text {
+  background-image: -webkit-linear-gradient(0deg, #8139f5, #ff8383);
+}

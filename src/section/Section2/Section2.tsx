@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
-import "./Section2.css";
+import React from "react";
+import "./Section2.scss";
 import { Masonry } from "@mui/lab";
-import { ScrollReveal } from "../../components/ScrollReveal";
+import { ScrollReveal } from "../../components/base/ScrollReveal";
 
 const Section2 = () => {
   return (
-    <section className="section2">
+    <section className="section section2" id="section2">
       <div className="section-inner">
         <h1 className="title">
           비용은 <strong>최저,</strong>
@@ -19,7 +19,10 @@ const Section2 = () => {
             <ScrollReveal>
               <div className="card">
                 <div className="card-header">
-                  <img src={require("../../static/profile-circle.png")} />
+                  <img
+                    className="profile-icon"
+                    src={require("../../static/profile-circle.png")}
+                  />
                   <div>
                     <strong>이진호</strong>님의 리뷰
                   </div>
@@ -44,7 +47,10 @@ const Section2 = () => {
             <ScrollReveal>
               <div className="card">
                 <div className="card-header">
-                  <img src={require("../../static/profile-circle.png")} />
+                  <img
+                    className="profile-icon"
+                    src={require("../../static/profile-circle.png")}
+                  />
                   <div>
                     <strong>김휘로</strong>님의 리뷰
                   </div>
@@ -66,7 +72,10 @@ const Section2 = () => {
             <ScrollReveal>
               <div className="card">
                 <div className="card-header">
-                  <img src={require("../../static/profile-circle.png")} />
+                  <img
+                    className="profile-icon"
+                    src={require("../../static/profile-circle.png")}
+                  />
                   <div>
                     <strong>이정진</strong>님의 리뷰
                   </div>
@@ -75,7 +84,7 @@ const Section2 = () => {
                   우편물 관리, 재계약 등의{" "}
                   <strong>사후관리가 잘 되어 좋았어요.</strong>
                 </div>
-                <span className="bottom-icon">👍</span>
+                <span className="bottom-icon">👍🏻</span>
               </div>
             </ScrollReveal>
 

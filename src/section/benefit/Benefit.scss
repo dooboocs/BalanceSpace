@@ -1,0 +1,25 @@
+.benefit .section-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0;
+}
+
+.benefit .section-inner:nth-of-type(2) .section-header-top svg path {
+  stroke: #f4db92;
+}
+
+.benefit .section-inner:nth-of-type(3) .section-header-top svg path {
+  stroke: #b0e2e2;
+}
+
+.benefit .section-inner .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 475px) {
+  .benefit .section-inner {
+    padding: 60px 25px;
+  }
+}

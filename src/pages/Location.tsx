@@ -1,11 +1,11 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Header } from "../components/Header";
+import { Header } from "../components/base/Header";
 import "./Location.css";
 
 const Location = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1200px)",
+    query: "(max-width: 475px)",
   });
 
   return (

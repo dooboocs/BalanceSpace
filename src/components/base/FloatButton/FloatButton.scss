@@ -1,0 +1,68 @@
+.float-button-container {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.9) 48.44%,
+    #ffffff 100%
+  );
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.float-button-wrapper {
+  width: 1080px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+
+  @media (max-width: 475px) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.float-button-wrapper p {
+  color: #686d79;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 475px) {
+    display: none;
+  }
+}
+
+.float-button {
+  background: #5d73ff;
+  color: #fff;
+  font-size: 20px;
+  width: 250px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50px;
+
+  @media (max-width: 475px) {
+    width: 210px;
+    height: 56px;
+    font-size: 18px;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    margin: 0 auto;
+  }
+}

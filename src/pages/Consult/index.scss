@@ -1,0 +1,137 @@
+.consult {
+  width: 100%;
+  height: 100vh;
+  background: #ececf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 475px) {
+    padding: 20px;
+    overflow: hidden;
+    justify-content: flex-start;
+    padding-top: 100px;
+  }
+}
+
+.consult .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+  @media (max-width: 475px) {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.consult .close {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.consult h1.title {
+  font-size: 32px;
+  color: #454f5d;
+  font-weight: 700;
+  margin-bottom: 56px;
+
+  @media (max-width: 475px) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.consult .card-wrapper {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 475px) {
+    width: 100%;
+  }
+}
+
+.consult a.detail {
+  display: none;
+  color: #5b7cff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+
+  @media (max-width: 475px) {
+    display: inline-block;
+  }
+}
+
+.consult#consult-detail {
+  background: gba(52, 56, 61, 0.3);
+  backdrop-filter: blur(30px);
+}
+
+.consult .mobile-dialog-inner {
+  width: 100vw;
+  position: absolute;
+}
+
+.consult .pagination {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  top: -30px;
+  left: 20px;
+}
+
+.consult .pagination .dot {
+  width: 10px;
+  height: 10px;
+  background: #eff2ff;
+  border-radius: 10px;
+}
+
+.consult .pagination .dot:nth-of-type(1).active {
+  background: #5b7cff;
+}
+
+.consult .pagination .dot:nth-of-type(2).active {
+  background: #4dc8ff;
+}
+
+.consult .card-scroll-view {
+  width: 100vw;
+  gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.consult .mobile-dialog-close {
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: -0.84px;
+  position: fixed;
+  bottom: 100px;
+}

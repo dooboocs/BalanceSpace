@@ -1,0 +1,31 @@
+.consult-card#type-b {
+  background: #eef8fd;
+}
+
+.consult-card#type-b .card-image {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.consult-card#type-b .card-title {
+  color: #2dbcff;
+}
+
+.consult-card#type-b .card-desc {
+  color: #80b8d0;
+}
+
+.consult-card#type-b .card-sub-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.consult-card#type-b .card-sub small {
+  color: #2dbcff;
+}
+
+.consult-card#type-b .card-bottom {
+  background: #4dc8ff;
+}

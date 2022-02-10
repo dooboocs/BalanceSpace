@@ -1,0 +1,43 @@
+.consult-select#type-a .inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.consult-select#type-a .title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #454f5d;
+}
+
+.consult-select#type-a .desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #8a8e9b;
+  letter-spacing: -0.88px;
+}
+
+.consult-select#type-a .tag {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 14px;
+  background: #5d75ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 50px;
+  letter-spacing: -0.84px;
+}
+
+.consult-select#type-a .more {
+  position: absolute;
+  right: -120px;
+  color: #5b7cff;
+  font-size: 15px;
+  letter-spacing: -0.84px;
+  font-weight: 700;
+  cursor: pointer;
+}

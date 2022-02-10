@@ -1,10 +1,10 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import "./Section5.css";
+import "./Section5.scss";
 
 const Section5 = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 1200px)",
+    query: "(max-width: 475px)",
   });
 
   return (

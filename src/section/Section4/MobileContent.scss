@@ -1,0 +1,38 @@
+.section4 .section-inner {
+  padding: 56px 0;
+  overflow: hidden;
+  transition: all 0.1s;
+
+  &.mode-0 {
+    background: #c5d0f9;
+  }
+  &.mode-1 {
+    background: #dff5f0;
+  }
+  &.mode-2 {
+    background: #ffdfd6;
+  }
+  &.mode-3 {
+    background: #f9e7fa;
+  }
+}
+
+.slick-dots li button::before {
+  color: rgba(41, 41, 46, 0.2);
+  font-size: 24px;
+}
+
+.slick-dots li:nth-of-type(1).slick-active button::before {
+  color: #547aff;
+}
+
+.slick-dots li:nth-of-type(2).slick-active button::before {
+  color: #4fe3c1;
+}
+
+.slick-dots li:nth-of-type(3).slick-active button::before {
+  color: #fc764c;
+}
+.slick-dots li:nth-of-type(4).slick-active button::before {
+  color: #ee7eee;
+}
