@@ -7,13 +7,13 @@ const BenefitCardB = () => {
   });
 
   return (
-    <div className="card">
-      <div className="card-header">
+    <div className="card" style={{ background: "#f1e7ff" }}>
+      <div className="card-header" style={{ color: "#A965FF" }}>
         {isMobile ? (
           <p className="card-title">#매출액 2억 #종업원 3명 (신규채용 2명)</p>
         ) : (
           <>
-            <p className="card-title">개인 사업자</p>
+            <p className="card-title">법인 사업자</p>
             <ul>
               <li>매출액 2억</li>
               <li>종업원 3명 (신규채용 2명)</li>
@@ -63,7 +63,7 @@ const BenefitCardB = () => {
         <div className="row total">
           <div className="row-item">합계</div>
           <div className="row-item" style={{ color: "#A965FF" }}>
-            연간 32,000,000원 혜택
+            연간 83,500,000원 혜택
           </div>
           <div className="row-item"></div>
         </div>

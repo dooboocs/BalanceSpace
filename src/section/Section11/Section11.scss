@@ -6,13 +6,21 @@
   }
 }
 
-#section11 .section-header .section-header-sub {
-  margin-top: 24px;
+#section11 .section-header {
+  height: auto;
   margin-bottom: 60px;
 
   @media (max-width: 475px) {
-    margin-top: 12px;
     margin-bottom: 32px;
+  }
+}
+
+#section11 .section-header .section-header-sub {
+  margin-top: 0;
+
+  @media (max-width: 475px) {
+    margin-top: 12px;
+    margin-bottom: 0;
   }
 }
 

@@ -1,5 +1,6 @@
 .section4 .section-inner {
   padding: 56px 0;
+  padding-bottom: 80px;
   overflow: hidden;
   transition: all 0.1s;
 
@@ -15,6 +16,10 @@
   &.mode-3 {
     background: #f9e7fa;
   }
+}
+
+.slick-dots li {
+  margin: 0 1px !important;
 }
 
 .slick-dots li button::before {

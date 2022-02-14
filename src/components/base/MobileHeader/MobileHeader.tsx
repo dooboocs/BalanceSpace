@@ -1,6 +1,7 @@
 import React from "react";
 import "./MobileHeader.scss";
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../../../static/icons/Logo.svg";
 
 const MobileHeader = () => {
   const headerRef = React.useRef<any>(null);
@@ -34,12 +35,8 @@ const MobileHeader = () => {
         className={`mobile-header ${collapse ? "collapse" : "expand"}`}
       >
         <div className="gnb">
-          <Link to="/">
-            <img
-              className="logo"
-              src={require("../../../static/logo@2x.png")}
-              alt="Balance Space"
-            />
+          <Link to="/" className="logo">
+            <Logo />
           </Link>
           <button onClick={toggleCollapse} className="menu-toggle">
             <div className="toggle-icon">

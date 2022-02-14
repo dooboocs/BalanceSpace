@@ -3,9 +3,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 150px;
 
   @media (max-width: 475px) {
     flex-direction: column;
+    padding-bottom: 60px;
   }
 }
 
@@ -31,6 +33,7 @@
     width: 100%;
     height: auto;
     padding: 30px 26px;
+    gap: 14px;
   }
 }
 
@@ -49,10 +52,11 @@
   font-weight: 700;
 
   @media (max-width: 475px) {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
-    letter-spacing: -0.88px;
-    padding: 24px 18px;
+    letter-spacing: -0.74px;
+    padding: 22px 18px;
+    height: 216px;
   }
 }
 
@@ -66,7 +70,7 @@
   right: 30px;
 
   @media (max-width: 475px) {
-    bottom: 24px;
-    right: 18px;
+    bottom: 20px;
+    right: 22px;
   }
 }

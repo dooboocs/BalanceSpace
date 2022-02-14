@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import { Dialog } from "../../components/base";
@@ -10,11 +10,11 @@ import {
 import "./index.scss";
 
 const Consult = () => {
-  const [popupA, setPopupA] = React.useState(false);
-  const [popupB, setPopupB] = React.useState(false);
-  const [popupC, setPopupC] = React.useState(false);
-  const [active, setActive] = React.useState(0);
-  const scrollViewRef = useRef<any>(null);
+  const [popupA, setPopupA] = useState(false);
+  const [popupB, setPopupB] = useState(false);
+  const [popupC, setPopupC] = useState(false);
+  const [active, setActive] = useState("A");
+  const [detailDialog, setDetailDialog] = useState(false);
 
   const isMobile = useMediaQuery({
     query: "(max-width: 475px)",
@@ -35,21 +35,10 @@ const Consult = () => {
     setPopupC(true);
   };
 
-  useEffect(() => {
-    function onScrollX() {
-      if (scrollViewRef.current.scrollLeft > 430) {
-        setActive(1);
-      } else {
-        setActive(0);
-      }
-    }
-
-    if (scrollViewRef.current) {
-      scrollViewRef.current.addEventListener("scroll", onScrollX);
-      return () =>
-        scrollViewRef.current.removeEventListener("scroll", onScrollX);
-    }
-  }, []);
+  const switchActive = (e: any) => {
+    e.preventDefault();
+    setActive(e.target.id);
+  };
 
   return (
     <div className="consult consult-1">
@@ -80,24 +69,34 @@ const Consult = () => {
           </Link>
         </ul>
         {isMobile ? (
-          <Dialog visible={popupC}>
-            <div className="mobile-dialog-inner">
-              <div className="pagination">
-                <span className={`dot ${active === 0 ? "active" : ""}`} />
-                <span className={`dot ${active === 1 ? "active" : ""}`} />
+          detailDialog ? (
+            <div className="card-container">
+              <img
+                className="close-button"
+                src={require("../../static/close-button.png")}
+                onClick={() => setDetailDialog(false)}
+              />
+              <div className="switch-wrapper">
+                <div
+                  className={`switch ${active === "A" ? "active" : ""}`}
+                  id="A"
+                  onClick={switchActive}
+                >
+                  결합 A형
+                </div>
+                <div
+                  className={`switch ${active === "B" ? "active" : ""}`}
+                  id="B"
+                  onClick={switchActive}
+                >
+                  결합 B형
+                </div>
               </div>
-              <div className="card-scroll-view" ref={scrollViewRef}>
-                <ConsultCardA />
-                <ConsultCardB />
-              </div>
+              {active === "A" ? <ConsultCardA /> : <ConsultCardB />}
             </div>
-            <div
-              className="mobile-dialog-close"
-              onClick={() => setPopupC(false)}
-            >
-              닫기
-            </div>
-          </Dialog>
+          ) : (
+            false
+          )
         ) : (
           <>
             <Dialog visible={popupA}>
@@ -108,7 +107,7 @@ const Consult = () => {
             </Dialog>
           </>
         )}
-        <a className="detail" onClick={showPopupC}>
+        <a className="detail" onClick={() => setDetailDialog(true)}>
           자세히 알아보기
         </a>
       </div>

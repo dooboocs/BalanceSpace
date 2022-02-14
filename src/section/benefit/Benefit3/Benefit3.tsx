@@ -1,8 +1,13 @@
 import React from "react";
 import "./Benefit3.scss";
 import { ReactComponent as LikeIcon } from "../../../static/like.svg";
+import { useMediaQuery } from "react-responsive";
 
 const Benefit3 = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 475px)",
+  });
+
   return (
     <section className="section benefit" id="benefit3">
       <div className="section-inner">
@@ -17,9 +22,19 @@ const Benefit3 = () => {
             인프라 서비스를 이용해보세요
           </div>
           <div className="section-header-sub">
-            인프라 서비스, 이제 신뢰할 수 있는 업체를 통해 신청하세요.
-            <br />
-            가장 좋은 조건으로 이용하실 수 있어요.
+            {isMobile ? (
+              <>
+                인프라 서비스, 이제 신뢰할 수 있는 업체를 통해
+                <br />
+                신청하세요. 가장 좋은 조건으로 이용하실 수 있어요.
+              </>
+            ) : (
+              <>
+                인프라 서비스, 이제 신뢰할 수 있는 업체를 통해 신청하세요.
+                <br />
+                가장 좋은 조건으로 이용하실 수 있어요.
+              </>
+            )}
           </div>
         </div>
         <div className="section-content">
@@ -43,7 +58,7 @@ const Benefit3 = () => {
               </p>
               <img
                 src={require("../../../static/benefit3-card2.png")}
-                style={{ width: 85 }}
+                style={{ width: 81 }}
               />
             </div>
           </div>

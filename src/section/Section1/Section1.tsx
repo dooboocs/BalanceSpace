@@ -9,7 +9,7 @@ const Section1 = () => {
   });
 
   return (
-    <section className="section1">
+    <section className="section" id="section1">
       <div className="section-inner">
         <h1 className="title gradient">
           {isMobile ? (
@@ -42,7 +42,7 @@ const Section1 = () => {
         <Link to="/consult">
           <button>빠른 상담하기</button>
         </Link>
-        <img className="main-image" src={require("../../static/sample.png")} />
+        <div className="main-image" />
       </div>
     </section>
   );

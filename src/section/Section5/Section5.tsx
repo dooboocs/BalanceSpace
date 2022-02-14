@@ -8,7 +8,7 @@ const Section5 = () => {
   });
 
   return (
-    <section className="section5">
+    <section className="section section5" id="section5">
       <div className="section-inner">
         <h3 className="title">
           {isMobile ? (

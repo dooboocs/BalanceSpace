@@ -44,9 +44,15 @@
 
 .request-card .card-title {
   color: #454f5d;
-  font-size: 32px;
-  line-height: 42px;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: -0.88px;
   font-weight: 700;
+
+  @media (max-width: 475px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
 }
 
 .request-card .input-wrapper {
@@ -103,6 +109,7 @@
   display: inline-block;
   border: none;
   background: #eff2f5;
+  cursor: pointer;
 }
 
 .request-card .check-input input#cb:checked ~ label.checkbox {
@@ -138,7 +145,6 @@
   background: #eff2ff;
   border-radius: 15px;
   color: #5b7cff;
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.5px;
   margin-top: 24px;
@@ -146,6 +152,16 @@
 
   @media (max-width: 475px) {
     justify-content: center;
+    font-weight: 500;
+  }
+}
+
+.request-card .box strong {
+  font-weight: 700;
+  margin-right: 5px;
+
+  @media (max-width: 475px) {
+    font-weight: 500;
   }
 }
 
@@ -176,6 +192,8 @@
   line-height: 56px;
   border-radius: 36px;
   margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
 
   &:hover {
     background: linear-gradient(90deg, #5e6eff 0%, #4bcdff 105.41%);

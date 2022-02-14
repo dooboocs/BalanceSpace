@@ -41,12 +41,12 @@ const ConsultCardB = ({ onClose }: ConsultCardBProps) => {
           <small>법인설립</small>
           <div className="row">
             <p>
-              <strong>0원</strong>
+              <strong>0원</strong> / 월
             </p>
             <span>100% 할인</span>
           </div>
           <label>
-            <span>639,300</span>원
+            <span>639,300</span>원 / 월
           </label>
         </div>
       </div>

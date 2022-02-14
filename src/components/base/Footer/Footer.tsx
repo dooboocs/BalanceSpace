@@ -1,15 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { ReactComponent as FooterLogo } from "../../../static/icons/Logo.svg";
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-inner">
         <div>
-          <img
-            src={require("../../../static/logo@2x.png")}
-            className="footer-logo"
-          />
+          <FooterLogo className="footer-logo" />
         </div>
         <div>
           <span>서비스 이용약관</span>

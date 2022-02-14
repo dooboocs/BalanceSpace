@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 import MobileHeader from "../MobileHeader/MobileHeader";
 import "./Header.scss";
+import { ReactComponent as Logo } from "../../../static/icons/Logo.svg";
 
 const Header = () => {
   const isMobile = useMediaQuery({
@@ -14,12 +15,8 @@ const Header = () => {
   ) : (
     <header className="header">
       <div className="gnb">
-        <Link to="/">
-          <img
-            className="logo"
-            src={require("../../../static/logo@2x.png")}
-            alt="Balance Space"
-          />
+        <Link to="/" className="logo">
+          <Logo />
         </Link>
         <nav className="nav">
           <ul>
@@ -34,7 +31,7 @@ const Header = () => {
               <div className="dropdown-list">
                 <div className="space" />
                 <ul>
-                  <a href="#">제공 서비스</a>
+                  <a href="#section5">제공 서비스</a>
                   <a href="#benefit">베네핏 서비스</a>
                   <a href="#section8">비용 안내</a>
                   <a href="#section9">이용 방법</a>

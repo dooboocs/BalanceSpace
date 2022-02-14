@@ -2,7 +2,7 @@
   margin: 0 !important;
 }
 
-.section2 .section-inner {
+#section2 .section-inner {
   margin: 0 auto;
   padding: 150px 0;
   display: flex;
@@ -16,7 +16,7 @@
   }
 }
 
-.section2 .section-inner .title {
+#section2 .section-inner .title {
   position: sticky;
   top: 110px;
   height: 200px;
@@ -36,12 +36,20 @@
   }
 }
 
-.section2 .section-inner .title strong {
+#section2 .section-inner .title strong {
   color: #454f5d;
 }
 
+#section2 .masonry {
+  width: 530px;
+
+  @media (max-width: 475px) {
+    width: 100%;
+  }
+}
+
 // Card Light
-.section2 .card {
+#section2 .card {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -54,31 +62,48 @@
   height: 300px;
   background: #f5f5f7;
   color: #82858d;
-  margin: 8px;
+  margin: 10px;
 
   @media (max-width: 475px) {
-    margin: 0;
+    height: 198px;
+    margin: 8px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.47;
+    padding: 20px 16px;
+  }
+
+  strong {
+    font-weight: 500;
   }
 }
 
 // Card Dark
-.section2 .card.dark {
+#section2 .card.dark {
   height: 140px;
   background: #29292e;
   color: #fff;
 
   @media (max-width: 475px) {
     font-size: 16px;
+    height: 100px;
+    padding: 15px 17px;
   }
 }
 
-.section2 .card.dark h3 {
+#section2 .card.dark h3 {
+  font-size: 20px;
+  font-weight: 500;
+
   @media (max-width: 475px) {
-    font-size: 22px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.47px;
   }
 }
 
-.section2 .card.dark .bottom-gradient {
+#section2 .card.dark .bottom-gradient {
   background-image: -webkit-linear-gradient(0deg, #5e6eff, #4bcdff);
   position: absolute;
   bottom: 25px;
@@ -87,20 +112,25 @@
   font-weight: 700;
 
   @media (max-width: 475px) {
-    bottom: 20px;
-    right: 20px;
-    font-size: 32px;
+    bottom: 12px;
+    right: 17px;
+    font-size: 25px;
+    line-height: 31px;
   }
 }
 
 // Card Blank
-.section2 .card.blank {
+#section2 .card.blank {
   height: 60px;
   background: transparent;
+
+  @media (max-width: 475px) {
+    height: 40px;
+  }
 }
 
 // Card Header
-.section2 .card .card-header {
+#section2 .card .card-header {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -116,7 +146,7 @@
   }
 }
 
-.section2 .card .card-header .profile-icon {
+#section2 .card .card-header .profile-icon {
   opacity: 0.1;
 
   @media (max-width: 475px) {
@@ -126,33 +156,39 @@
 }
 
 // Card Content
-.section2 .card .card-content {
-  line-height: 22px;
+#section2 .card .card-content {
+  // font-size: 16px;
+  line-height: 32px;
   font-weight: 400;
+  letter-spacing: -0.5px;
 
   @media (max-width: 475px) {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
+    letter-spacing: -0.47;
   }
 }
 
-.section2 .card .card-content strong {
-  color: #292d32;
+#section2 .card .card-content strong {
+  color: #454f5d;
 }
 
-.section2 .card .bottom-icon {
+#section2 .card .bottom-icon {
   position: absolute;
   bottom: 25px;
   right: 25px;
   font-size: 48px;
+  line-height: 60px;
 
   @media (max-width: 475px) {
     bottom: 20px;
     right: 20px;
+    font-size: 33px;
+    line-height: 30px;
   }
 }
 
-.section2 .card h3 {
+#section2 .card h3 {
   font-size: 24px;
   font-weight: 700;
 }

@@ -13,17 +13,30 @@ const LinkCardB = () => {
           법인설립 수수료를 100% D/C 해드려요
         </p>
       </div>
-
-      <div className="sub">
-        <strong className="sub-title" style={{ color: "#2DBCFF" }}>
-          비상주 사무실
-        </strong>
-        <div className="amount">
-          <strong>20,000원</strong> / 월<div className="tag">33% 할인</div>
+      <div className="sub-wrapper">
+        <div className="sub">
+          <strong className="sub-title" style={{ color: "#2DBCFF" }}>
+            비상주 사무실
+          </strong>
+          <div className="amount">
+            <strong>20,000원</strong> / 월<div className="tag">33% 할인</div>
+          </div>
+          <div className="discount">
+            <span>30,000원</span> / 월
+          </div>
         </div>
-        <div className="discount">30,000원 / 월</div>
+        <div className="sub">
+          <strong className="sub-title" style={{ color: "#2DBCFF" }}>
+            법인설립
+          </strong>
+          <div className="amount">
+            <strong>0원</strong> / 월<div className="tag">100% 할인</div>
+          </div>
+          <div className="discount">
+            <span>639,300원</span>
+          </div>
+        </div>
       </div>
-
       <div className="bottom-tag" style={{ background: "#4DC8FF" }}>
         연 649,300원 혜택
       </div>

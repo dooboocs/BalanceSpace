@@ -7,48 +7,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Card from "./Card";
-
-const CardA = () => {
-  return (
-    <Card
-      bgColor="#EAF6FE"
-      spanColor="#61BEF5"
-      title="세무 서비스."
-      desc="초기사업자 맞춤 세무서비스로 더 큰 절세 혜택을 경험해보세요."
-      service="세무기장, 재산세, 영업권 평가"
-      color="#32A6EC"
-    />
-  );
-};
-
-const CardB = () => {
-  return (
-    <Card
-      bgColor="#F5F5F7"
-      spanColor="#FFD14B"
-      title="노무 서비스."
-      desc="최고의 노무 서비스를 특가로 이용해보세요."
-      service="근로계약서, 연차휴가, 급여대장, 취업규칙, 
-      비정규직(일용직 등), 4대 보험, 노동법 상담"
-      color="#F3BD1D"
-    />
-  );
-};
-
-const CardC = () => {
-  return (
-    <Card
-      bgColor="#F5F5F7"
-      spanColor="#B2D270"
-      title="법률/법무 서비스."
-      desc="기업전문 변호사/법무사 서비스를 특가로 이용해보세요."
-      service="기업법률자문, 공정거래, 민형사소송, 실용신안/
-      특허 출원, 법인설립, 변경등기, 부동산 등기"
-      color="#8AB534"
-    />
-  );
-};
+import CardA from "./Card/CardA";
+import CardB from "./Card/CardB";
+import CardC from "./Card/CardC";
 
 const Benefit2 = () => {
   const isMobile = useMediaQuery({

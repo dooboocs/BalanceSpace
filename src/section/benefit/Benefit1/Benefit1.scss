@@ -27,11 +27,16 @@
   letter-spacing: -0.88px;
   font-weight: 700;
   color: #454f5d;
+}
 
-  &.active {
-    border-bottom: 2px solid #e56868;
-    color: #e56868;
-  }
+#benefit .link-group .link-item:nth-of-type(1).active {
+  border-bottom: 2px solid #e56868;
+  color: #e56868;
+}
+
+#benefit .link-group .link-item:nth-of-type(2).active {
+  border-bottom: 2px solid #a965ff;
+  color: #a965ff;
 }
 
 #benefit .card {
@@ -63,7 +68,7 @@
 
   @media (max-width: 475px) {
     width: 100%;
-    height: 258px !important;
+    height: 280px !important;
     padding: 25px;
     padding-bottom: 0;
     flex: auto;
@@ -111,6 +116,10 @@
   border-radius: 20px 20px 0px 0px;
   flex-grow: 1;
   padding-bottom: 10px;
+
+  @media (max-width: 475px) {
+    padding-bottom: 15px;
+  }
 }
 
 #benefit .card .card-content .table {
@@ -155,29 +164,45 @@
       color: #e56868;
       flex: 2;
     }
+
     .row-item:nth-of-type(3) {
-      flex: 0.5;
+      flex: 0;
     }
 
     @media (max-width: 475px) {
       padding: 10px 27px;
-      font-size: 14px;
+      font-size: 16px;
       padding: 0 25px;
     }
   }
 
   @media (max-width: 475px) {
     padding: 12px;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.6px;
   }
 }
 
 #benefit .card .card-content .row .row-item {
   flex: 1;
   text-align: left;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
+
+  &:nth-of-type(1) {
+    flex: 1;
+  }
 
   &:nth-of-type(2) {
-    flex: 1.5;
+    flex: 1.3;
+  }
+
+  &:nth-of-type(3) {
+    flex: 0.7;
+  }
+
+  @media (max-width: 475px) {
+    letter-spacing: -1px;
   }
 }
 

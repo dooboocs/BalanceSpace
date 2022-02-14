@@ -1,0 +1,123 @@
+#benefit2 .card {
+  width: 100%;
+  border-radius: 30px;
+  background: #f5f5f7;
+  padding: 30px;
+  text-align: left;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (max-width: 475px) {
+    width: auto;
+    height: 310px !important;
+    margin: 0 10px;
+    padding: 26px;
+    border-radius: 20px;
+  }
+}
+
+#benefit2 .card .card-header {
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.88px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #838a9a;
+
+  @media (max-width: 475px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+#benefit2 .card .card-content {
+  @media (max-width: 475px) {
+    width: 100% !important;
+  }
+}
+
+#benefit2 .card#type-b .card-content {
+  width: 50%;
+}
+
+#benefit2 .card#type-c .card-content {
+  width: 50%;
+}
+
+#benefit2 .card .card-content p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.88px;
+  font-weight: 400;
+  color: #8b939f;
+
+  @media (max-width: 475px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+#benefit2 .card .card-content span {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 28px;
+  color: #fff;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.62px;
+
+  @media (max-width: 475px) {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+#benefit2 .card .row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @media (max-width: 475px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#benefit2 .card#type-a img {
+  width: 142px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 475px) {
+    width: 135px;
+    right: 26px;
+    bottom: 26px;
+    transform: none;
+  }
+}
+
+#benefit2 .card#type-b img {
+  width: 158px;
+
+  @media (max-width: 475px) {
+    width: 135px;
+  }
+}
+
+#benefit2 .card#type-c img {
+  width: 192px;
+
+  @media (max-width: 475px) {
+    position: relative;
+    left: -8px;
+    width: 100%;
+  }
+}

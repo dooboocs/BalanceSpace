@@ -3,7 +3,6 @@
 }
 
 .consult-card#type-b .card-image {
-  padding-top: 30px;
   width: 100%;
 }
 
@@ -18,8 +17,7 @@
 .consult-card#type-b .card-sub-wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
-  gap: 30px;
+  flex-direction: column;
 }
 
 .consult-card#type-b .card-sub small {

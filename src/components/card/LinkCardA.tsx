@@ -19,7 +19,9 @@ const LinkCardA = () => {
         <div className="amount">
           <strong>20,000원</strong> / 월<div className="tag">33% 할인</div>
         </div>
-        <div className="discount">30,000원 / 월</div>
+        <div className="discount">
+          <span>30,000원</span> / 월
+        </div>
       </div>
 
       <div className="bottom-tag">연 120,000원 혜택</div>

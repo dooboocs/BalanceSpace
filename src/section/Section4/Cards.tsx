@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import "./Cards.scss";
+import { ReactComponent as Card2Img } from "../../static/card-2.svg";
 
 export const Card1 = () => {
   return (
@@ -41,29 +42,59 @@ export const Card2 = () => {
       <div className="card-header">
         <h3 className="card-title">보증금/예치금 0원으로 더 아끼세요</h3>
         <p className="card-sub">
-          보증금/예치금 반환 걱정 없이, 초기비용을 더 아낄 수 있어요.
+          {isMobile ? (
+            <>
+              보증금/예치금 반환 걱정 없이, 초기비용을
+              <br />더 아낄 수 있어요.
+            </>
+          ) : (
+            <>보증금/예치금 반환 걱정 없이, 초기비용을 더 아낄 수 있어요.</>
+          )}
         </p>
       </div>
-      <img
-        src={
-          isMobile
-            ? require("../../static/section4/m-chart.png")
-            : require("../../static/section4/chart.png")
-        }
-        style={{ width: "100%" }}
-      />
+      {isMobile ? (
+        <img
+          src={require("../../static/section4/m-chart.png")}
+          style={{ width: "100%" }}
+        />
+      ) : (
+        <Card2Img />
+      )}
     </div>
   );
 };
 
 export const Card3 = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 475px)",
+  });
   return (
     <div className="card">
       <div className="card-header">
-        <h3 className="card-title">사업자 필수 서비스도 특가로 제공돼요</h3>
+        <h3 className="card-title">
+          {isMobile ? (
+            <>
+              사업자 필수 서비스도
+              <br />
+              특가로 제공돼요
+            </>
+          ) : (
+            <>사업자 필수 서비스도 특가로 제공돼요</>
+          )}
+        </h3>
         <p className="card-sub">
-          오직 밸런스 스페이스에서만 제공하는 베네핏 서비스로 할인과 이득 모두
-          누리세요.
+          {isMobile ? (
+            <>
+              오직 밸런스 스페이스에서만 제공하는 베네핏 서비스로 할인과 이득
+              모두 누리세요.
+            </>
+          ) : (
+            <>
+              오직 밸런스 스페이스에서만 제공하는 베네핏 서비스로
+              <br />
+              할인과 이득 모두 누리세요.
+            </>
+          )}
         </p>
       </div>
       <div className="card-content">
@@ -76,19 +107,42 @@ export const Card3 = () => {
 };
 
 export const Card4 = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 475px)",
+  });
   return (
-    <div className="card">
+    <div className="card" id="card4">
       <div className="card-header">
-        <h3 className="card-title">10분만에 빠르고 편리하게 계약하세요</h3>
+        <h3 className="card-title">
+          {isMobile ? (
+            <>
+              10분만에 빠르고
+              <br />
+              편리하게 계약하세요
+            </>
+          ) : (
+            <>10분만에 빠르고 편리하게 계약하세요</>
+          )}
+        </h3>
         <p className="card-sub">
-          방문 및서류 제출 없이 빠르게 계약이 진행되어 이용 시간을 대폭 줄일 수
-          있어요.
+          {isMobile ? (
+            <>
+              방문 및서류 제출 없이 빠르게 계약이 진행되어 이용 시간을 대폭 줄일
+              수 있어요.
+            </>
+          ) : (
+            <>
+              방문 및서류 제출 없이 빠르게 계약이 진행되어 이용 시간을
+              <br />
+              대폭 줄일 수 있어요.
+            </>
+          )}
         </p>
       </div>
       <div className="card-content">
         <img
           src={require("../../static/section4/graphics.png")}
-          style={{ width: "80%", margin: "0 auto" }}
+          style={{ width: "100%", margin: "0 auto" }}
         />
         <label>*법인의 경우, 서류 제출이 필요합니다.</label>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Header } from "../components/base/Header";
-import "./Location.css";
+import "./Location.scss";
 
 const Location = () => {
   const isMobile = useMediaQuery({

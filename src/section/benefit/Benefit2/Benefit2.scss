@@ -5,6 +5,12 @@
 
 #benefit2 .section-header {
   width: auto;
+  height: auto;
+  margin-bottom: 60px;
+
+  @media (max-width: 475px) {
+    margin-bottom: 30px;
+  }
 }
 
 #benefit2 .section-header-top svg path {
@@ -39,6 +45,22 @@
   flex: 1;
 }
 
+#benefit2 .slick-dots {
+  bottom: -40px;
+}
+
+#benefit2 .slick-dots li:nth-of-type(1).slick-active button::before {
+  color: #61bef5;
+}
+
+#benefit2 .slick-dots li:nth-of-type(2).slick-active button::before {
+  color: #fccf4e;
+}
+
+#benefit2 .slick-dots li:nth-of-type(3).slick-active button::before {
+  color: #b2d270;
+}
+
 #benefit2 .card {
   width: 100%;
   border-radius: 30px;
@@ -71,7 +93,9 @@
 
 #benefit2 .card .card-content p {
   font-size: 18px;
-
+  line-height: 30px;
+  letter-spacing: -0.88px;
+  font-weight: 400;
   color: #8b939f;
 
   @media (max-width: 475px) {
@@ -86,7 +110,9 @@
   color: #fff;
   margin-bottom: 14px;
   font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
+  letter-spacing: -0.62px;
 
   @media (max-width: 475px) {
     margin-bottom: 12px;

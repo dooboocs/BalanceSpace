@@ -5,7 +5,7 @@ import { ScrollReveal } from "../../components/base/ScrollReveal";
 
 const Section2 = () => {
   return (
-    <section className="section section2" id="section2">
+    <section className="section" id="section2">
       <div className="section-inner">
         <h1 className="title">
           비용은 <strong>최저,</strong>
@@ -15,7 +15,7 @@ const Section2 = () => {
           만족도는 <strong>최상</strong>
         </h1>
         <div className="masonry">
-          <Masonry columns={2} spacing={2}>
+          <Masonry columns={2} spacing={0}>
             <ScrollReveal>
               <div className="card">
                 <div className="card-header">
